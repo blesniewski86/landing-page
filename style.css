@@ -1,12 +1,22 @@
-.section0 {
-    background-color: #1F2937;
+.section0, .section1, .section2, .image-group {
     display: flex;
 }
 
-.section0flex {
-    width: 800px;
+.section0 {
+    background-color: #1F2937;
+}
+
+.section0flex, .section1flex, .section2flex {
+    width: 1000px;
     margin: 0 auto;
-    padding: 16px 16px;
+    padding: 4px 16px;
+}
+
+.section1flex, .section2flex {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
@@ -24,5 +34,140 @@ ul {
 .logo {
     margin-right: auto;
     font-size: 24px;
+}
+
+.underheader {
+    display: flex;
+    padding: 64px 0px;
+}
+
+.left-items, .right-items {
+    flex-basis: 50%;
+}
+
+.right-items {
+    background-color: #e5e7eb;
+}
+
+.hero-title {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+    margin: 0;
+    padding-right: 16px;
+}
+
+.hero-text {
+    color: #e5e7eb;
+    font-size: 18px;
+    padding-right: 16px;
+}
+
+.right-image {
+    background-color: #e5e7eb;
+}
+
+body {
+    margin: 0;
+}
+
+.left-items button {
+    padding: 8px 32px;
+    border-radius: 8px;
+
+    color: white;
+    background-color: #3882f6;
+    border: none;
+    font-weight: bold;
+}
+
+.image-group {
+    gap:32px 64px;
+    padding: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-group li {
+    width: 150px;
+    text-align: center;
+}
+
+.image-group li div {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3882f6;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.image-group li {
+    display: flex;
+    flex-direction: column;
+}
+
+.section1flex h1 {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.section2 {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+}
+
+.section2flex {
+    padding: 64px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section2flex p {
+    margin: 0;
+}
+.section2flex .author {
+    margin: 0;
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+.section3flex {
+    padding: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #3882f6;
+    border-radius: 8px;
+    padding: 32px 64px;
+    width: 800px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.left-footer h1, .left-footer p {
+    color: #f9faf8;
+    margin: 0;
+}
+
+.right-footer button {
+    padding: 8px 32px;
+    border-radius: 8px;
+
+    color: white;
+    background-color: #3882f6;
+    border-color: #f9faf8;
+    border: solid;
+    font-weight: bold;
+}
+
+.right-footer {
+    flex-shrink: 0;
 }
 
