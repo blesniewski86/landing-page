@@ -1,0 +1,28 @@
+.section0 {
+    background-color: #1F2937;
+    display: flex;
+}
+
+.section0flex {
+    width: 800px;
+    margin: 0 auto;
+    padding: 16px 16px;
+}
+
+ul {
+    list-style: none;
+}
+.header {
+    display: flex;
+    font-family: Roboto, sans-serif;
+    color: #f9faf8;
+    gap: 16px;
+    padding-left: 0;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+    font-size: 24px;
+}
+
